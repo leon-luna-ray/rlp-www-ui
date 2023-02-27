@@ -4,5 +4,4 @@
         <h2>Subtitle</h2>
     </div>
     <div class="intro">Intro</div>
-    <div><NuxtLink to="/albums/cancun">Cancun 2022</NuxtLink></div>
 </template>
