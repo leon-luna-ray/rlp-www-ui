@@ -1,7 +1,8 @@
 <template>
     <header>
-        <nav>
-            <ul>
+        <nav class="flex justify-between">
+            <div class="title">Ray Luna</div>
+            <ul class="flex gap-x-5 my-">
                 <li>
                     <NuxtLink to="/">Home</NuxtLink>
                 </li>
@@ -17,6 +18,6 @@
 </template>
 <style>
 .router-link-exact-active {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid black;
 }
 </style>

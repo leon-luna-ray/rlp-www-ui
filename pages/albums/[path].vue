@@ -1,8 +1,8 @@
 <script setup>
-const { slug } = useRoute().params
+const { path } = useRoute().params
 </script>
 <template>
     <div class="gallery-detail">
-        <h1>Gallery Detail Page for {{ slug }}</h1>
+        <h1>Gallery Detail Page for {{ path }}</h1>
     </div>
 </template>
