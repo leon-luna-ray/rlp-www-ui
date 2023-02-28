@@ -1,8 +1,8 @@
 <template>
-    <header>
+    <!-- <header>
         <nav class="flex justify-between">
             <div class="title">Ray Luna</div>
-            <ul class="flex gap-x-5 my-">
+            <ul class="flex gap-x-5">
                 <li>
                     <NuxtLink to="/">Home</NuxtLink>
                 </li>
@@ -11,7 +11,7 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     <main>
         <slot />
     </main>
