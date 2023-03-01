@@ -3,4 +3,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
   ],
+  runtimeConfig: {
+    public: {
+      API_BASE_URL: process.env.API_BASE_URL,
+      HOME_PAGE_ID: process.env.HOME_PAGE_ID,
+    }
+  },
 })

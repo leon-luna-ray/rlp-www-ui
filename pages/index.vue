@@ -1,5 +1,6 @@
 <script setup>
-const reqUrl = `${import.meta.env.VITE_APP_API_BASE_URL}/pages/${import.meta.env.VITE_APP_HOME_PAGE_ID}`
+const { API_BASE_URL, HOME_PAGE_ID } = useRuntimeConfig()
+const reqUrl = `${API_BASE_URL}/pages/${HOME_PAGE_ID}`
 const { data } = await useFetch(reqUrl);
 </script>
 <template>
