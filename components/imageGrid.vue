@@ -1,14 +1,13 @@
 <script setup>
 import { useUiStore } from '@/stores/ui'
 
+const uiStore = useUiStore();
 const props = defineProps({
     images: {
         type: Array,
         required: true,
     }
-})
-// State
-const uiStore = useUiStore()
+});
 
 </script>
 <template>

@@ -1,7 +1,7 @@
 <script setup>
 import { useUiStore } from '@/stores/ui'
 
-const uiStore = useUiStore()
+const uiStore = useUiStore();
 </script>
 <template>
     <header>
@@ -16,7 +16,7 @@ const uiStore = useUiStore()
     </header>
     <main>
         <!-- todo make this a semi-transparent bg rather than full-screen -->
-        <ImageModal v-if="uiStore.imageModalOpen" />
+        <ImageModal v-if="uiStore.imageModalOpen && uiStore.modalImages.length" />
         <slot v-else />
     </main>
 </template>

@@ -15,6 +15,7 @@ export const useUiStore = defineStore('ui', () => {
     imageModalOpen.value = true;
   };
 
+  // todo create method to captialize only first letter
 
   return {
     imageModalOpen,
