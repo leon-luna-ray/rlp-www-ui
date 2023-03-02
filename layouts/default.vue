@@ -1,19 +1,23 @@
+<script setup>
+import { useUiStore } from '@/stores/ui'
+
+const uiStore = useUiStore();
+</script>
 <template>
-    <!-- <header>
+    <header>
         <nav class="flex justify-between">
-            <div class="title">Ray Luna</div>
+            <div></div>
             <ul class="flex gap-x-5">
                 <li>
                     <NuxtLink to="/">Home</NuxtLink>
                 </li>
-                <li>
-                    <NuxtLink to="/albums/cancun">Cancun 2022</NuxtLink>
-                </li>
             </ul>
         </nav>
-    </header> -->
+    </header>
     <main>
-        <slot />
+        <!-- todo make this a semi-transparent bg rather than full-screen -->
+        <ImageModal v-if="uiStore.imageModalOpen && uiStore.modalImages.length" />
+        <slot v-else />
     </main>
 </template>
 <style>
