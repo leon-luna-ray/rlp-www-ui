@@ -57,7 +57,7 @@ const previousImage = () => {
             </div>
             <div class="image-details col-span-2">
                 <h1 class="title">{{ uiStore.modalImages[uiStore.openImageIndex].value.title }}</h1>
-                <ul class="image-data">
+                <ul v-if="uiStore.modalImages[uiStore.openImageIndex].value.exif_data" class="image-data">
                     <li v-if="cameraName">Camera: {{ cameraName }}</li>
                     <li v-if="lensName">Lens: {{ lensName }}</li>
                     <li v-if="fNumber">{{ fNumber }}</li>
